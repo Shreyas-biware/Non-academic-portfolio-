@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "shreyas-non-academic-portfolio",
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
