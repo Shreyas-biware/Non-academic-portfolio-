@@ -3,229 +3,286 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shreyas | Non-Academic Portfolio</title>
-  
-  <!-- Google Fonts: Space Grotesk, Syne, Archivo Black -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-  
+  <title>Shreyas Biware | Non-Academic Portfolio</title>
+  <meta name="description" content="Shreyas Biware's non-academic portfolio — cricket, road trips, drums, guitar, dance, leadership at NMIMS, and more personal interests." />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
   <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Portfolio Stylesheet -->
   <link rel="stylesheet" href="./style.css" />
 </head>
-<body class="neo-brutalist">
-  <!-- Scroll Progress Bar -->
-  <div id="scroll-progress"></div>
+<body>
 
-  <!-- Top Announcement Marquee -->
-  <div class="top-marquee">
+  <!-- Skip navigation link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <!-- Top Announcement Marquee (decorative) -->
+  <div class="top-marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>⚡ NON-ACADEMIC PORTFOLIO</span>
       <span>•</span>
-      <span>🏏 CRICKET & SPORTS</span>
+      <span>🏏 CRICKET &amp; SPORTS</span>
       <span>•</span>
-      <span>🚗 ROAD TRIPS & DRIVING</span>
+      <span>🚗 ROAD TRIPS &amp; DRIVING</span>
       <span>•</span>
-      <span>📸 PHOTOGRAPHY & CREATIVE HOBBIES</span>
+      <span>🥁 DRUMS &amp; MUSIC</span>
       <span>•</span>
-      <span>🎸 MUSIC & GUITAR</span>
+      <span>🎸 ACOUSTIC GUITAR</span>
       <span>•</span>
-      <span>🌟 VOLUNTEERING & CLUB ACTIVITIES</span>
+      <span>💃 DANCE &amp; STAGE</span>
+      <span>•</span>
+      <span>🌟 LEADERSHIP &amp; ACTIVITIES</span>
       <span>•</span>
       <span>⚡ NON-ACADEMIC PORTFOLIO</span>
       <span>•</span>
-      <span>🏏 CRICKET & SPORTS</span>
+      <span>🏏 CRICKET &amp; SPORTS</span>
       <span>•</span>
-      <span>🚗 ROAD TRIPS & DRIVING</span>
+      <span>🚗 ROAD TRIPS &amp; DRIVING</span>
+      <span>•</span>
+      <span>🥁 DRUMS &amp; MUSIC</span>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar" id="navbar">
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-sticker">S⚡</span>
+      <a href="#hero" class="nav-logo" aria-label="Shreyas Biware — back to top">
+        <span class="logo-sticker" aria-hidden="true">S⚡</span>
         <span class="logo-text">SHREYAS <span class="tag-label">PORTFOLIO</span></span>
       </a>
 
-      <!-- Single-Line Nav Links -->
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
-        <li><a href="#sports" class="nav-link"><i class="fa-solid fa-trophy"></i> Sports</a></li>
-        <li><a href="#gallery" class="nav-link"><i class="fa-solid fa-camera"></i> Hobbies</a></li>
-        <li><a href="#leadership" class="nav-link"><i class="fa-solid fa-hands-holding-heart"></i> Activities</a></li>
-        <li><a href="#trophies" class="nav-link"><i class="fa-solid fa-award"></i> Certificates</a></li>
-        <li><a href="#passions" class="nav-link"><i class="fa-solid fa-heart"></i> Passions</a></li>
+      <ul class="nav-links" role="list">
+        <li><a href="#about"      class="nav-link" aria-label="About section"><i class="fa-solid fa-user" aria-hidden="true"></i> About</a></li>
+        <li><a href="#sports"     class="nav-link" aria-label="Sports section"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Sports</a></li>
+        <li><a href="#gallery"    class="nav-link" aria-label="Hobbies section"><i class="fa-solid fa-music" aria-hidden="true"></i> Hobbies</a></li>
+        <li><a href="#leadership" class="nav-link" aria-label="Activities section"><i class="fa-solid fa-star" aria-hidden="true"></i> Activities</a></li>
+        <li><a href="#trophies"   class="nav-link" aria-label="Certificates section"><i class="fa-solid fa-award" aria-hidden="true"></i> Certificates</a></li>
+        <li><a href="#passions"   class="nav-link" aria-label="Passions section"><i class="fa-solid fa-heart" aria-hidden="true"></i> Passions</a></li>
       </ul>
 
       <div class="nav-actions">
         <a href="#contact" class="btn btn-brutal btn-yellow">
-          <i class="fa-solid fa-paper-plane"></i>
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
           <span>Let's Connect</span>
         </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
-          <i class="fa-solid fa-bars-staggered"></i>
+        <button class="mobile-toggle" id="mobileToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileDrawer">
+          <i class="fa-solid fa-bars-staggered" aria-hidden="true"></i>
         </button>
       </div>
     </div>
   </nav>
 
+  <!-- Overlay for mobile drawer -->
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+
   <!-- Mobile Menu Drawer -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
-    <div class="drawer-links">
-      <a href="#about" class="drawer-link"><i class="fa-solid fa-user"></i> About Me</a>
-      <a href="#sports" class="drawer-link"><i class="fa-solid fa-trophy"></i> Sports</a>
-      <a href="#gallery" class="drawer-link"><i class="fa-solid fa-camera"></i> Creative Hobbies</a>
-      <a href="#leadership" class="drawer-link"><i class="fa-solid fa-hands-holding-heart"></i> Activities & Volunteering</a>
-      <a href="#trophies" class="drawer-link"><i class="fa-solid fa-award"></i> Certificates & Milestones</a>
-      <a href="#passions" class="drawer-link"><i class="fa-solid fa-heart"></i> Passions & Interests</a>
-      <a href="#contact" class="drawer-link btn-drawer"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
-    </div>
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Navigation menu" aria-modal="true" hidden>
+    <button class="drawer-close" id="drawerClose" aria-label="Close navigation menu">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <nav class="drawer-links" aria-label="Mobile navigation">
+      <a href="#about"      class="drawer-link"><i class="fa-solid fa-user" aria-hidden="true"></i> About Me</a>
+      <a href="#sports"     class="drawer-link"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Sports</a>
+      <a href="#gallery"    class="drawer-link"><i class="fa-solid fa-music" aria-hidden="true"></i> Creative Hobbies</a>
+      <a href="#leadership" class="drawer-link"><i class="fa-solid fa-star" aria-hidden="true"></i> Activities &amp; Leadership</a>
+      <a href="#trophies"   class="drawer-link"><i class="fa-solid fa-award" aria-hidden="true"></i> Certificates</a>
+      <a href="#passions"   class="drawer-link"><i class="fa-solid fa-heart" aria-hidden="true"></i> Passions</a>
+      <a href="#contact"    class="drawer-link btn-drawer"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Get In Touch</a>
+    </nav>
   </div>
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="hero">
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- ===========================
+         HERO SECTION
+         =========================== -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-heading">
       <div class="hero-grid">
-        <!-- Left Side: Profile Picture Column with 2 Frames -->
-        <div class="hero-profile-column">
-          <!-- Card 1: Modern Yellow Frame -->
+
+        <!-- Left: Profile Photo Column -->
+        <div class="hero-profile-column" aria-label="Profile photos">
+
+          <!-- Card 1: Main photo -->
           <div class="hero-profile-card brutal-card card-yellow">
             <div class="profile-img-wrap">
-              <img id="profileImage" src="./profile.jpg" alt="Shreyas Profile Picture">
-              <div class="profile-badge-sticker">SHREYAS ⚡</div>
+              <img id="profileImage"
+                   src="./profile.jpg"
+                   alt="Shreyas Biware in a kurta and sunglasses — casual outdoor look"
+                   loading="eager"
+                   width="340" height="453" />
+              <div class="profile-badge-sticker" aria-hidden="true">SHREYAS ⚡</div>
             </div>
             <div class="profile-meta">
               <div class="profile-tag-row">
-                <span class="brutal-badge badge-pink"><i class="fa-solid fa-trophy"></i> CRICKET ENTHUSIAST</span>
-                <span class="brutal-badge badge-cyan"><i class="fa-solid fa-camera"></i> PHOTOGRAPHY HOBBYIST</span>
+                <span class="brutal-badge badge-pink">
+                  <i class="fa-solid fa-baseball-bat-ball" aria-hidden="true"></i>
+                  Cricket Enthusiast
+                </span>
+                <span class="brutal-badge badge-cyan">
+                  <i class="fa-solid fa-camera" aria-hidden="true"></i>
+                  Hobbyist
+                </span>
               </div>
-              <p class="profile-caption">"Exploring interests in sports, photography, music, and social causes."</p>
+              <p class="profile-caption">"Exploring sports, music, creativity &amp; new experiences."</p>
             </div>
           </div>
 
-          <!-- Card 2: NMIMS Campus Formal Frame -->
+          <!-- Card 2: NMIMS campus photo -->
           <div class="hero-profile-card brutal-card card-pink">
             <div class="profile-img-wrap">
-              <img id="profileImage2" src="./profile2.jpg" alt="Shreyas NMIMS Formal Campus Look">
-              <div class="profile-badge-sticker" style="background: var(--pink); color: var(--white);">NMIMS CAMPUS LOOK 🎓</div>
+              <img id="profileImage2"
+                   src="./profile2.jpg"
+                   alt="Shreyas Biware in formal blazer at NMIMS Deemed to be University campus"
+                   loading="lazy"
+                   width="340" height="453" />
+              <div class="profile-badge-sticker" style="background: var(--color-pink); color: var(--bg-white);" aria-hidden="true">
+                NMIMS CAMPUS 🎓
+              </div>
             </div>
             <div class="profile-meta">
               <div class="profile-tag-row">
-                <span class="brutal-badge badge-yellow"><i class="fa-solid fa-user-tie"></i> FORMAL ATTIRE</span>
-                <span class="brutal-badge badge-green"><i class="fa-solid fa-building-columns"></i> NMIMS CAMPUS</span>
+                <span class="brutal-badge badge-yellow">
+                  <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                  Formal Attire
+                </span>
+                <span class="brutal-badge badge-green">
+                  <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                  NMIMS
+                </span>
               </div>
-              <p class="profile-caption" style="color: var(--white);">"Representing NMIMS campus culture, professional leadership & academic pride."</p>
+              <p class="profile-caption" style="color: rgba(255,255,255,0.9);">"Representing NMIMS campus culture &amp; professional pride."</p>
             </div>
           </div>
-        </div>
 
-        <!-- Right Side: Hero Content & Stats -->
+        </div><!-- /hero-profile-column -->
+
+        <!-- Right: Hero Content & Stats -->
         <div class="hero-content">
-          <div class="hero-badge-wrap">
+          <div class="hero-badge-wrap" aria-hidden="true">
             <span class="brutal-badge badge-pink">
-              <i class="fa-solid fa-bolt"></i> BEYOND THE CLASSROOM
+              <i class="fa-solid fa-bolt"></i> Beyond the Classroom
             </span>
             <span class="brutal-badge badge-cyan">
-              <i class="fa-solid fa-heart"></i> PERSONAL INTERESTS
+              <i class="fa-solid fa-heart"></i> Personal Interests
             </span>
           </div>
 
-          <h1 class="hero-title">
-            SPORTS, <span class="text-highlight highlight-yellow">CREATIVE HOBBIES</span> &
-            COMMUNITY <span class="text-highlight highlight-pink">ACTIVITIES</span>.
+          <h1 class="hero-title" id="hero-heading">
+            Sports,
+            <span class="text-highlight highlight-yellow">Creative&nbsp;Hobbies</span>
+            &amp;&nbsp;Community
+            <span class="text-highlight highlight-pink">Activities</span>.
           </h1>
 
           <div class="hero-lead">
             <p>
-              Hi, I’m <strong class="name-tag">Shreyas Biware</strong> — a curious, creative, and people-oriented person who enjoys exploring new ideas and turning them into something meaningful.
+              Hi, I'm <strong class="name-tag">Shreyas Biware</strong> — a curious, creative, and people-oriented person who enjoys exploring new ideas and turning them into something meaningful.
             </p>
             <p>
-              I enjoy cricket, creativity, design, photography, and discovering new things. I’m someone who likes taking initiative, working with people, and learning through experiences rather than simply following a routine.
+              I enjoy cricket, creativity, design, photography, and discovering new things. I like taking initiative, working with people, and learning through experiences rather than simply following a routine.
             </p>
             <p>
-              Whether it’s organizing something, creating content, solving a problem, or working with a team, I enjoy bringing my own perspective and energy to what I do. I believe growth comes from staying curious, trying new things, and being open to challenges.
+              Whether it's organizing something, creating content, solving a problem, or working with a team — I bring my own perspective and energy to what I do. Growth comes from staying curious, trying new things, and being open to challenges.
             </p>
             <p class="hero-motto">
-              ⚡ Always learning. Always creating. Always moving forward.
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              Always learning. Always creating. Always moving forward.
             </p>
           </div>
 
           <div class="hero-cta-group">
             <a href="#sports" class="btn btn-brutal btn-pink btn-lg">
-              <span>View Sports & Hobbies</span>
-              <i class="fa-solid fa-circle-chevron-down"></i>
+              <span>View Sports &amp; Hobbies</span>
+              <i class="fa-solid fa-circle-chevron-down" aria-hidden="true"></i>
             </a>
-            <a href="#gallery" class="btn btn-brutal btn-white btn-lg">
-              <i class="fa-solid fa-camera-retro"></i>
-              <span>View Photo Gallery</span>
+            <a href="#contact" class="btn btn-brutal btn-white btn-lg">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              <span>Get In Touch</span>
             </a>
           </div>
 
-          <!-- Grounded Stats Grid -->
-          <div class="stats-grid">
+          <!-- Stats — truthful, label-based -->
+          <div class="stats-grid" aria-label="Quick facts">
             <div class="stat-card stat-yellow">
-              <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
-              <div class="stat-number" data-target="3">0</div>
-              <div class="stat-label">Tournaments & Runs</div>
+              <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+              <div class="stat-number">Active</div>
+              <div class="stat-label">Cricket Player</div>
             </div>
             <div class="stat-card stat-cyan">
-              <div class="stat-icon"><i class="fa-solid fa-camera"></i></div>
-              <div class="stat-number" data-target="50">0</div>
-              <div class="stat-label">Photos & Visuals</div>
+              <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
+              <div class="stat-number">Road</div>
+              <div class="stat-label">Trip Enthusiast</div>
             </div>
             <div class="stat-card stat-pink">
-              <div class="stat-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-              <div class="stat-number" data-target="40">0</div>
-              <div class="stat-label">Volunteer Hours</div>
+              <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-drum"></i></div>
+              <div class="stat-number">4</div>
+              <div class="stat-label">Leadership Roles</div>
             </div>
             <div class="stat-card stat-green">
-              <div class="stat-icon"><i class="fa-solid fa-bullhorn"></i></div>
-              <div class="stat-number" data-target="2">0</div>
-              <div class="stat-label">Fest Drives Helped</div>
+              <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-guitar"></i></div>
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Creative Hobbies</div>
             </div>
           </div>
-        </div>
-      </div>
+
+        </div><!-- /hero-content -->
+      </div><!-- /hero-grid -->
     </section>
 
-    <!-- MIDDLE MARQUEE BANNER -->
-    <div class="middle-marquee">
+    <!-- Middle marquee -->
+    <div class="middle-marquee" aria-hidden="true">
       <div class="marquee-track reverse">
-        <span>🏏 UJJAIN CRICKET CLUB & SCHOOL TEAM</span>
+        <span>🏏 UJJAIN CRICKET CLUB &amp; SCHOOL TEAM</span>
         <span>★</span>
-        <span>🚗 ROAD TRIPS & HIGHWAY DRIVING</span>
+        <span>🚗 ROAD TRIPS &amp; HIGHWAY DRIVING</span>
         <span>★</span>
-        <span>📸 CASUAL & TRAVEL PHOTOGRAPHY</span>
+        <span>🥁 PLAYING DRUMS — FAVORITE HOBBY</span>
         <span>★</span>
         <span>🎸 ACOUSTIC GUITAR PRACTICE</span>
         <span>★</span>
-        <span>🌱 COMMUNITY VOLUNTEERING</span>
+        <span>💃 DANCING &amp; CONTENT CREATION</span>
         <span>★</span>
-        <span>🏏 UJJAIN CRICKET CLUB & SCHOOL TEAM</span>
+        <span>🏏 UJJAIN CRICKET CLUB &amp; SCHOOL TEAM</span>
+        <span>★</span>
+        <span>🚗 ROAD TRIPS &amp; HIGHWAY DRIVING</span>
       </div>
     </div>
 
-    <!-- ABOUT / IDENTITY SECTION -->
-    <section class="section about-section" id="about">
+    <!-- ===========================
+         01 ABOUT — NON-ACADEMIC FOCUS
+         =========================== -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
       <div class="section-container">
-        <div class="section-header">
-          <span class="header-badge badge-yellow">01 // INTERESTS</span>
-          <h2 class="section-title">MY NON-ACADEMIC FOCUS</h2>
-          <p class="section-desc">Key areas where I spend my extra-curricular time and build teamwork and creative skills.</p>
-        </div>
+        <header class="section-header">
+          <span class="header-badge badge-yellow">01 // Interests</span>
+          <h2 class="section-title" id="about-heading">My Non-Academic Focus</h2>
+          <p class="section-desc">Key areas where I invest my extra-curricular time, build teamwork skills, and express my creative energy.</p>
+        </header>
 
         <div class="pillars-grid">
-          <!-- Pillar 1 -->
+
+          <!-- Pillar 1: Cricket -->
           <div class="pillar-card card-pink">
-            <div class="card-sticker">01</div>
-            <div class="card-icon-wrap"><i class="fa-solid fa-baseball-bat-ball"></i></div>
-            <h3 class="pillar-title">Cricket & Sportsmanship</h3>
+            <div class="card-sticker" aria-hidden="true">01</div>
+            <div class="card-icon-wrap" aria-hidden="true"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+            <h3 class="pillar-title">Cricket &amp; Sportsmanship</h3>
             <p class="pillar-text">
-              Playing cricket with Ujjain Cricket Club and school team. Sports help me stay active, learn team coordination, and build sportsmanship.
+              Active player for Ujjain Cricket Club and the school cricket team. Sports keep me fit, teach team coordination, and build genuine sportsmanship under pressure.
             </p>
             <div class="card-tags">
               <span>Ujjain Cricket Club</span>
@@ -234,13 +291,13 @@
             </div>
           </div>
 
-          <!-- Pillar 2 -->
+          <!-- Pillar 2: Road Trips -->
           <div class="pillar-card card-cyan">
-            <div class="card-sticker">02</div>
-            <div class="card-icon-wrap"><i class="fa-solid fa-car"></i></div>
-            <h3 class="pillar-title">Road Trips & Exploring</h3>
+            <div class="card-sticker" aria-hidden="true">02</div>
+            <div class="card-icon-wrap" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
+            <h3 class="pillar-title">Road Trips &amp; Exploring</h3>
             <p class="pillar-text">
-              Passionate drivingoholic who loves highway drives, scenic road trips, and exploring new places behind the wheel.
+              A passionate driving enthusiast who loves long highway drives, discovering scenic routes, and exploring new destinations with friends.
             </p>
             <div class="card-tags">
               <span>Road Trips</span>
@@ -249,60 +306,69 @@
             </div>
           </div>
 
-          <!-- Pillar 3 -->
+          <!-- Pillar 3: Volunteering -->
           <div class="pillar-card card-yellow">
-            <div class="card-sticker">03</div>
-            <div class="card-icon-wrap"><i class="fa-solid fa-hands-holding-heart"></i></div>
-            <h3 class="pillar-title">Volunteering & Student Drives</h3>
+            <div class="card-sticker" aria-hidden="true">03</div>
+            <div class="card-icon-wrap" aria-hidden="true"><i class="fa-solid fa-hands-holding-heart"></i></div>
+            <h3 class="pillar-title">Volunteering &amp; Student Drives</h3>
             <p class="pillar-text">
-              Participating as a volunteer in student fest committees and neighborhood cleanliness and awareness drives.
+              Volunteering in student fest committees and logistics teams. Taking on responsibilities that make events and communities run better.
             </p>
             <div class="card-tags">
               <span>Fest Volunteer</span>
-              <span>Cleanliness Drive</span>
+              <span>Protsahan</span>
+              <span>NMIMS Events</span>
             </div>
           </div>
 
-          <!-- Pillar 4 -->
+          <!-- Pillar 4: Music -->
           <div class="pillar-card card-green">
-            <div class="card-sticker">04</div>
-            <div class="card-icon-wrap"><i class="fa-solid fa-guitar"></i></div>
-            <h3 class="pillar-title">Acoustic Guitar & Music</h3>
+            <div class="card-sticker" aria-hidden="true">04</div>
+            <div class="card-icon-wrap" aria-hidden="true"><i class="fa-solid fa-music"></i></div>
+            <h3 class="pillar-title">Music &amp; Creative Arts</h3>
             <p class="pillar-text">
-              Learning acoustic guitar chords in my free time and enjoying listening to indie rock and acoustic melodies.
+              Playing acoustic drums and guitar in my free time. Music is where I express energy, find calm, and stay creatively engaged.
             </p>
             <div class="card-tags">
-              <span>Acoustic Guitar</span>
+              <span>Acoustic Drums</span>
+              <span>Guitar</span>
               <span>Music Practice</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- SPORTS & ATHLETICS SECTION -->
-    <section class="section sports-section" id="sports">
+    <!-- ===========================
+         02 SPORTS & ATHLETICS
+         =========================== -->
+    <section class="section sports-section section-alt" id="sports" aria-labelledby="sports-heading">
       <div class="section-container">
-        <div class="section-header">
-          <span class="header-badge badge-cyan">02 // SPORTS & ATHLETICS</span>
-          <h2 class="section-title">SPORTS & ROAD TRIPS</h2>
-          <p class="section-desc">Active involvement in club cricket matches, highway road trips, and fitness activities.</p>
-        </div>
+        <header class="section-header">
+          <span class="header-badge badge-cyan">02 // Sports &amp; Athletics</span>
+          <h2 class="section-title" id="sports-heading">Sports &amp; Road Trips</h2>
+          <p class="section-desc">Active involvement in club cricket, highway road trips, and regular fitness activities.</p>
+        </header>
 
         <div class="sports-featured-grid">
-          <!-- Feature 1: Cricket -->
-          <div class="sports-card brutal-card card-yellow">
+
+          <!-- Cricket -->
+          <article class="sports-card brutal-card card-yellow">
             <div class="sports-image-holder">
-              <img src="./cricket.jpg" alt="Shreyas Cricket Action" loading="lazy">
-              <div class="sports-badge">UJJAIN CRICKET CLUB & SCHOOL SQUAD</div>
+              <img src="./cricket.jpg"
+                   alt="Shreyas in cricket batting gear at the crease during a match"
+                   loading="lazy"
+                   width="400" height="500" />
+              <div class="sports-badge" aria-hidden="true">Ujjain Cricket Club &amp; School Squad</div>
             </div>
             <div class="sports-content">
-              <div class="sports-category"><i class="fa-solid fa-baseball-bat-ball"></i> CRICKET</div>
-              <h3 class="sports-title">Ujjain Cricket Club & School Team Member</h3>
+              <p class="sports-category"><i class="fa-solid fa-baseball-bat-ball" aria-hidden="true"></i> Cricket</p>
+              <h3 class="sports-title">Ujjain Cricket Club &amp; School Team Member</h3>
               <p class="sports-desc">
-                Active player for Ujjain Cricket Club and school cricket team as a middle-order batsman and medium-pace bowler. Regularly attend team practices, participate in club and school tournaments, and support team strategy on the field.
+                Active player for Ujjain Cricket Club and school cricket team. I play as a middle-order batsman and medium-pace bowler — regularly attending practices, participating in club and school tournaments, and contributing to team strategy on the field.
               </p>
-              <div class="sports-stats-row">
+              <div class="sports-stats-row" aria-label="Cricket highlights">
                 <div class="mini-stat">
                   <span class="val">120+</span>
                   <span class="lbl">Runs Scored</span>
@@ -317,50 +383,52 @@
                 </div>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Feature 2: Driving & Road Trips -->
-          <div class="sports-card brutal-card card-pink">
+          <!-- Driving -->
+          <article class="sports-card brutal-card card-pink">
             <div class="sports-image-holder">
-              <img src="./driving.jpg" alt="Shreyas Driving" loading="lazy">
-              <div class="sports-badge">ROAD TRIPS & EXPLORING</div>
+              <img src="./driving.jpg"
+                   alt="Shreyas driving on a road trip — highway explorer"
+                   loading="lazy"
+                   width="400" height="500" />
+              <div class="sports-badge" aria-hidden="true">Road Trips &amp; Exploring</div>
             </div>
             <div class="sports-content">
-              <div class="sports-category"><i class="fa-solid fa-car"></i> ROAD TRIPS & DRIVING</div>
-              <h3 class="sports-title">Driving Enthusiast & Road Explorer</h3>
+              <p class="sports-category"><i class="fa-solid fa-car" aria-hidden="true"></i> Road Trips &amp; Driving</p>
+              <h3 class="sports-title">Driving Enthusiast &amp; Road Explorer</h3>
               <p class="sports-desc">
-                Passionate drivingoholic who loves long highway drives, exploring scenic routes, road trips with friends, and discovering new destinations behind the wheel.
+                Passionate about long highway drives, discovering scenic routes, and road trips with friends. Exploring new places behind the wheel is one of my favorite ways to recharge and experience freedom.
               </p>
-              <div class="sports-stats-row">
+              <div class="sports-stats-row" aria-label="Road trip highlights">
                 <div class="mini-stat">
                   <span class="val">5,000+</span>
-                  <span class="lbl">KM Driven</span>
+                  <span class="lbl">km Driven</span>
                 </div>
                 <div class="mini-stat">
                   <span class="val">10+</span>
                   <span class="lbl">Road Trips</span>
                 </div>
-                <div class="mini-stat">
-                  <span class="val">100%</span>
-                  <span class="lbl">Road Passion</span>
-                </div>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Feature 3: Swimming & Fitness -->
-          <div class="sports-card brutal-card card-green">
+          <!-- Swimming -->
+          <article class="sports-card brutal-card card-green">
             <div class="sports-image-holder">
-              <img src="./swimming.jpg" alt="Shreyas Swimming" loading="lazy">
-              <div class="sports-badge">SWIMMING & FITNESS</div>
+              <img src="./swimming.jpg"
+                   alt="Shreyas at the swimming pool during a fitness session"
+                   loading="lazy"
+                   width="400" height="500" />
+              <div class="sports-badge" aria-hidden="true">Swimming &amp; Fitness</div>
             </div>
             <div class="sports-content">
-              <div class="sports-category"><i class="fa-solid fa-person-swimming"></i> SWIMMING & FITNESS</div>
-              <h3 class="sports-title">Swimming & Active Fitness</h3>
+              <p class="sports-category"><i class="fa-solid fa-person-swimming" aria-hidden="true"></i> Swimming &amp; Fitness</p>
+              <h3 class="sports-title">Swimming &amp; Active Fitness</h3>
               <p class="sports-desc">
-                Enjoying regular swimming sessions to build full-body stamina, core strength, and mental refreshment alongside active fitness routines.
+                Regular swimming sessions help me build full-body stamina, core strength, and mental refreshment. Staying physically active is an important part of maintaining energy and focus in everyday life.
               </p>
-              <div class="sports-stats-row">
+              <div class="sports-stats-row" aria-label="Fitness highlights">
                 <div class="mini-stat">
                   <span class="val">Weekly</span>
                   <span class="lbl">Swimming</span>
@@ -371,71 +439,81 @@
                 </div>
               </div>
             </div>
-          </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- CREATIVE HOBBIES SECTION -->
-    <section class="section gallery-section" id="gallery">
+    <!-- ===========================
+         03 CREATIVE HOBBIES
+         =========================== -->
+    <section class="section gallery-section" id="gallery" aria-labelledby="hobbies-heading">
       <div class="section-container">
-        <div class="section-header">
-          <span class="header-badge badge-pink">03 // CREATIVE HOBBIES</span>
-          <h2 class="section-title">CREATIVE HOBBIES & PASSIONS</h2>
-          <p class="section-desc">A sequence of my favorite creative pastimes, music, stage performances, and content creation.</p>
-        </div>
+        <header class="section-header">
+          <span class="header-badge badge-pink">03 // Creative Hobbies</span>
+          <h2 class="section-title" id="hobbies-heading">Creative Hobbies &amp; Passions</h2>
+          <p class="section-desc">My favourite creative pastimes — music, stage performances, and content creation.</p>
+        </header>
 
         <div class="hobby-sequence-grid">
+
           <!-- Hobby 1: Drums -->
-          <div class="hobby-card brutal-card card-yellow">
+          <article class="hobby-card brutal-card card-yellow">
             <div class="hobby-content">
-              <span class="hobby-num-badge">01</span>
-              <div class="hobby-category"><i class="fa-solid fa-drum"></i> FAVORITE HOBBY</div>
-              <h3 class="hobby-title">1. Playing Drums</h3>
+              <span class="hobby-num-badge" aria-hidden="true">01</span>
+              <p class="hobby-category"><i class="fa-solid fa-drum" aria-hidden="true"></i> Favourite Hobby</p>
+              <h3 class="hobby-title">Playing Drums</h3>
               <p class="hobby-desc">
-                Rhythm, energy, and beat control. Playing acoustic drums is my absolute favorite hobby—it brings high energy, focus, and dynamic musical expression.
+                Rhythm, energy, and beat control — playing acoustic drums is my absolute favourite hobby. It brings high focus, dynamic musical expression, and a real sense of release that nothing else quite matches.
               </p>
               <div class="hobby-tags">
                 <span>Acoustic Drums</span>
-                <span>Rhythm & Beats</span>
-                <span>Favorite Hobby</span>
+                <span>Rhythm &amp; Beats</span>
+                <span>Favourite Hobby</span>
               </div>
             </div>
             <div class="hobby-image-holder">
-              <img src="./drums.jpg" alt="Shreyas Playing Drums" loading="lazy">
-              <div class="hobby-badge">01 // FAVORITE HOBBY</div>
+              <img src="./drums.jpg"
+                   alt="Shreyas playing acoustic drums"
+                   loading="lazy"
+                   width="400" height="480" />
+              <div class="hobby-badge" aria-hidden="true">01 // Favourite Hobby</div>
             </div>
-          </div>
+          </article>
 
           <!-- Hobby 2: Guitar -->
-          <div class="hobby-card brutal-card card-cyan">
+          <article class="hobby-card brutal-card card-cyan">
             <div class="hobby-content">
-              <span class="hobby-num-badge">02</span>
-              <div class="hobby-category"><i class="fa-solid fa-guitar"></i> PART-TIME HOBBY</div>
-              <h3 class="hobby-title">2. Playing Acoustic Guitar</h3>
+              <span class="hobby-num-badge" aria-hidden="true">02</span>
+              <p class="hobby-category"><i class="fa-solid fa-guitar" aria-hidden="true"></i> Part-Time Hobby</p>
+              <h3 class="hobby-title">Playing Acoustic Guitar</h3>
               <p class="hobby-desc">
-                Unwinding with acoustic chords during quiet evenings. Playing guitar is my go-to part-time hobby to relax, explore acoustic tabs, and compose gentle melodies.
+                Unwinding with acoustic chords during quiet evenings. Playing guitar is my go-to part-time hobby to relax, explore acoustic tabs, and compose gentle melodies after a busy day.
               </p>
               <div class="hobby-tags">
                 <span>Acoustic Guitar</span>
-                <span>Chords & Tabs</span>
+                <span>Chords &amp; Tabs</span>
                 <span>Part-Time Hobby</span>
               </div>
             </div>
             <div class="hobby-image-holder">
-              <img src="./guitar.jpg" alt="Shreyas Playing Guitar" loading="lazy">
-              <div class="hobby-badge">02 // PART-TIME HOBBY</div>
+              <img src="./guitar.jpg"
+                   alt="Shreyas playing acoustic guitar"
+                   loading="lazy"
+                   width="400" height="480" />
+              <div class="hobby-badge" aria-hidden="true">02 // Part-Time Hobby</div>
             </div>
-          </div>
+          </article>
 
-          <!-- Hobby 3: Dancing & Content Creation -->
-          <div class="hobby-card brutal-card card-pink">
+          <!-- Hobby 3: Dance -->
+          <article class="hobby-card brutal-card card-pink">
             <div class="hobby-content">
-              <span class="hobby-num-badge">03</span>
-              <div class="hobby-category"><i class="fa-solid fa-person-dancing"></i> CREATIVE EXPRESSION</div>
-              <h3 class="hobby-title">3. Dancing & Content Creation</h3>
+              <span class="hobby-num-badge" aria-hidden="true">03</span>
+              <p class="hobby-category"><i class="fa-solid fa-person-dancing" aria-hidden="true"></i> Creative Expression</p>
+              <h3 class="hobby-title">Dancing &amp; Content Creation</h3>
               <p class="hobby-desc">
-                Expressing rhythm and confidence through stage dancing and creative video content creation. Performing on stage brings creative storytelling, self-expression, and high energy to life.
+                Expressing rhythm and confidence through stage dancing and creative video content. Performing brings storytelling, self-expression, and high energy to life — and I genuinely enjoy the creative process of making content.
               </p>
               <div class="hobby-tags">
                 <span>Stage Dance</span>
@@ -444,217 +522,238 @@
               </div>
             </div>
             <div class="hobby-image-holder">
-              <img src="./dance.jpg" alt="Shreyas Dancing on Stage" loading="lazy">
-              <div class="hobby-badge">03 // STAGE PERFORMANCE</div>
+              <img src="./dance.jpg"
+                   alt="Shreyas dancing on stage during a performance"
+                   loading="lazy"
+                   width="400" height="480" />
+              <div class="hobby-badge" aria-hidden="true">03 // Stage Performance</div>
             </div>
-          </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- LEADERSHIP & ACTIVITIES SECTION -->
-    <section class="section leadership-section" id="leadership">
+    <!-- ===========================
+         04 LEADERSHIP & ACTIVITIES
+         =========================== -->
+    <section class="section leadership-section section-alt" id="leadership" aria-labelledby="leadership-heading">
       <div class="section-container">
-        <div class="section-header">
-          <span class="header-badge badge-green">04 // ACTIVITIES & LEADERSHIP</span>
-          <h2 class="section-title">LEADERSHIP & RESPONSIBILITIES</h2>
-          <p class="section-desc">Key campus roles, committee leadership, logistics management, and creative marketing execution.</p>
-        </div>
+        <header class="section-header">
+          <span class="header-badge badge-green">04 // Activities &amp; Leadership</span>
+          <h2 class="section-title" id="leadership-heading">Leadership &amp; Responsibilities</h2>
+          <p class="section-desc">Key campus roles, committee leadership, logistics management, and creative marketing at NMIMS.</p>
+        </header>
 
         <div class="timeline-brutal">
-          <!-- Timeline Entry 1 -->
-          <div class="timeline-node left">
-            <div class="timeline-badge-year">2024</div>
+
+          <!-- Entry 1 -->
+          <div class="timeline-node">
+            <div class="timeline-badge-year">
+              <time datetime="2024">2024</time>
+            </div>
             <div class="timeline-box brutal-card card-yellow">
-              <div class="box-tag"><i class="fa-solid fa-user-tie"></i> CLASS REPRESENTATIVE</div>
-              <h3 class="box-title">1. Class Representative, NMIMS</h3>
+              <div class="box-tag"><i class="fa-solid fa-user-tie" aria-hidden="true"></i> Class Representative</div>
+              <h3 class="box-title">Class Representative, NMIMS</h3>
               <p class="box-text">
-                Sole point of contact between faculty and students; provided one-on-one guidance to classmates on academic and administrative matters.
+                Sole point of contact between faculty and students — provided one-on-one guidance to classmates on academic and administrative matters throughout the academic year.
               </p>
               <ul class="box-list">
-                <li><i class="fa-solid fa-check"></i> Faculty & Student Liaison</li>
-                <li><i class="fa-solid fa-check"></i> One-on-One Academic & Administrative Guidance</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Faculty &amp; student liaison</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> One-on-one academic &amp; administrative guidance</li>
               </ul>
             </div>
           </div>
 
-          <!-- Timeline Entry 2 -->
-          <div class="timeline-node right">
-            <div class="timeline-badge-year">2023 - 2024</div>
+          <!-- Entry 2 -->
+          <div class="timeline-node">
+            <div class="timeline-badge-year">
+              <time datetime="2023/2024">2023–24</time>
+            </div>
             <div class="timeline-box brutal-card card-pink">
-              <div class="box-tag"><i class="fa-solid fa-chart-line"></i> MARKETING HEAD</div>
-              <h3 class="box-title">2. Social Media Marketing Head, Finance Club, NMIMS</h3>
+              <div class="box-tag"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Marketing Head</div>
+              <h3 class="box-title">Social Media Marketing Head, Finance Club, NMIMS</h3>
               <p class="box-text">
-                Coordinated content and outreach for a finance-focused student body, building exposure to financial/market communication.
+                Coordinated content and outreach for a finance-focused student body, building exposure to financial and market communication through organised social campaigns.
               </p>
               <ul class="box-list">
-                <li><i class="fa-solid fa-check"></i> Finance Club Content Strategy & Outreach</li>
-                <li><i class="fa-solid fa-check"></i> Financial & Market Communication</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Finance Club content strategy &amp; outreach</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Financial &amp; market communication</li>
               </ul>
             </div>
           </div>
 
-          <!-- Timeline Entry 3 -->
-          <div class="timeline-node left">
-            <div class="timeline-badge-year">2023</div>
+          <!-- Entry 3 -->
+          <div class="timeline-node">
+            <div class="timeline-badge-year">
+              <time datetime="2023">2023</time>
+            </div>
             <div class="timeline-box brutal-card card-cyan">
-              <div class="box-tag"><i class="fa-solid fa-truck-ramp-box"></i> LOGISTICS LEAD</div>
-              <h3 class="box-title">3. Associate Core (Logistics), Protsahan</h3>
+              <div class="box-tag"><i class="fa-solid fa-truck-ramp-box" aria-hidden="true"></i> Logistics Lead</div>
+              <h3 class="box-title">Associate Core (Logistics), Protsahan</h3>
               <p class="box-text">
-                Led and mentored a logistics team through on-ground event execution.
+                Led and mentored a logistics team through on-ground event execution — managing operations, timelines, and team coordination during the event.
               </p>
               <ul class="box-list">
-                <li><i class="fa-solid fa-check"></i> On-Ground Event Logistics & Execution</li>
-                <li><i class="fa-solid fa-check"></i> Team Leadership & Operations Mentorship</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> On-ground event logistics &amp; execution</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Team leadership &amp; operations mentorship</li>
               </ul>
             </div>
           </div>
 
-          <!-- Timeline Entry 4 -->
-          <div class="timeline-node right">
-            <div class="timeline-badge-year">2023</div>
+          <!-- Entry 4 -->
+          <div class="timeline-node">
+            <div class="timeline-badge-year">
+              <time datetime="2023">2023</time>
+            </div>
             <div class="timeline-box brutal-card card-green">
-              <div class="box-tag"><i class="fa-solid fa-palette"></i> GRAPHIC DESIGNER</div>
-              <h3 class="box-title">4. Social Media Marketing (Graphic Designer), Ambiora Techfest, NMIMS</h3>
+              <div class="box-tag"><i class="fa-solid fa-palette" aria-hidden="true"></i> Graphic Designer</div>
+              <h3 class="box-title">Social Media Marketing — Graphic Designer, Ambiora Techfest, NMIMS</h3>
               <p class="box-text">
-                Designed visual branding, promotional graphics, and social media marketing assets for Ambiora Techfest, NMIMS.
+                Designed visual branding, promotional graphics, and social media marketing assets for Ambiora Techfest at NMIMS — contributing to the fest's digital presence.
               </p>
               <ul class="box-list">
-                <li><i class="fa-solid fa-check"></i> Techfest Visual Branding & Social Media Graphics</li>
-                <li><i class="fa-solid fa-check"></i> Digital Marketing & Design Execution</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Techfest visual branding &amp; social media graphics</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Digital marketing &amp; design execution</li>
               </ul>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES & PARTICIPATION SECTION -->
-    <section class="section trophies-section" id="trophies">
+    <!-- ===========================
+         05 CERTIFICATES & MILESTONES
+         =========================== -->
+    <section class="section trophies-section" id="trophies" aria-labelledby="certs-heading">
       <div class="section-container">
-        <div class="section-header">
-          <span class="header-badge badge-yellow">05 // CERTIFICATES & PARTICIPATION</span>
-          <h2 class="section-title">CERTIFICATES & MILESTONES</h2>
-          <p class="section-desc">Key recognitions, sports participation, event management, and club involvement.</p>
-        </div>
+        <header class="section-header">
+          <span class="header-badge badge-yellow">05 // Certificates &amp; Milestones</span>
+          <h2 class="section-title" id="certs-heading">Certificates &amp; Participation</h2>
+          <p class="section-desc">Sports participation, event management, and club involvement across college and beyond.</p>
+        </header>
 
         <div class="trophy-grid">
-          <!-- Item 1 -->
-          <div class="trophy-card brutal-card card-yellow">
-            <div class="trophy-icon">🏏</div>
-            <div class="trophy-year">2024</div>
-            <h3 class="trophy-title">1. Cricket Tournaments</h3>
-            <p class="trophy-desc">Active participation as a key team member in club and inter-school/college cricket tournaments.</p>
-          </div>
 
-          <!-- Item 2 -->
-          <div class="trophy-card brutal-card card-pink">
-            <div class="trophy-icon">🎉</div>
-            <div class="trophy-year">2024</div>
-            <h3 class="trophy-title">2. College Events</h3>
+          <article class="trophy-card brutal-card card-yellow">
+            <span class="trophy-icon" role="img" aria-label="Cricket bat and ball">🏏</span>
+            <div class="trophy-year"><time datetime="2024">2024</time></div>
+            <h3 class="trophy-title">Cricket Tournaments</h3>
+            <p class="trophy-desc">Active participation as a team member in club and inter-school cricket tournaments.</p>
+          </article>
+
+          <article class="trophy-card brutal-card card-pink">
+            <span class="trophy-icon" role="img" aria-label="Party popper">🎉</span>
+            <div class="trophy-year"><time datetime="2024">2024</time></div>
+            <h3 class="trophy-title">College Events</h3>
             <p class="trophy-desc">Involvement in planning, hosting, and coordinating major campus cultural and academic events.</p>
-          </div>
+          </article>
 
-          <!-- Item 3 -->
-          <div class="trophy-card brutal-card card-cyan">
-            <div class="trophy-icon">📋</div>
-            <div class="trophy-year">2023 - 2024</div>
-            <h3 class="trophy-title">3. Event Management</h3>
+          <article class="trophy-card brutal-card card-cyan">
+            <span class="trophy-icon" role="img" aria-label="Clipboard">📋</span>
+            <div class="trophy-year"><time datetime="2023/2024">2023–24</time></div>
+            <h3 class="trophy-title">Event Management</h3>
             <p class="trophy-desc">Hands-on experience in on-ground event execution, stage coordination, and logistics operations.</p>
-          </div>
+          </article>
 
-          <!-- Item 4 -->
-          <div class="trophy-card brutal-card card-green">
-            <div class="trophy-icon">🏆</div>
-            <div class="trophy-year">2024</div>
-            <h3 class="trophy-title">4. Sports & Athletics</h3>
-            <p class="trophy-desc">Regular participation in competitive sports, physical fitness routines, and recreational matches.</p>
-          </div>
+          <article class="trophy-card brutal-card card-green">
+            <span class="trophy-icon" role="img" aria-label="Trophy">🏆</span>
+            <div class="trophy-year"><time datetime="2024">2024</time></div>
+            <h3 class="trophy-title">Sports &amp; Athletics</h3>
+            <p class="trophy-desc">Regular participation in competitive sports, fitness routines, and recreational matches.</p>
+          </article>
 
-          <!-- Item 5 -->
-          <div class="trophy-card brutal-card card-yellow">
-            <div class="trophy-icon">🏃</div>
-            <div class="trophy-year">2024</div>
-            <h3 class="trophy-title">5. Marathons & Distance Runs</h3>
+          <article class="trophy-card brutal-card card-yellow">
+            <span class="trophy-icon" role="img" aria-label="Running person">🏃</span>
+            <div class="trophy-year"><time datetime="2024">2024</time></div>
+            <h3 class="trophy-title">Marathons &amp; Distance Runs</h3>
             <p class="trophy-desc">Completed distance runs and marathon events, building long-term stamina and mental discipline.</p>
-          </div>
+          </article>
 
-          <!-- Item 6 -->
-          <div class="trophy-card brutal-card card-pink">
-            <div class="trophy-icon">🤝</div>
-            <div class="trophy-year">2023 - 2024</div>
-            <h3 class="trophy-title">6. Club Activities</h3>
+          <article class="trophy-card brutal-card card-pink">
+            <span class="trophy-icon" role="img" aria-label="Handshake">🤝</span>
+            <div class="trophy-year"><time datetime="2023/2024">2023–24</time></div>
+            <h3 class="trophy-title">Club Activities</h3>
             <p class="trophy-desc">Active member and volunteer across student finance, sports, and cultural clubs at NMIMS.</p>
-          </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- PASSIONS & HOBBIES FLIP CARDS SECTION -->
-    <section class="section passions-section" id="passions">
+    <!-- ===========================
+         06 PASSIONS — FLIP CARDS
+         =========================== -->
+    <section class="section passions-section section-alt" id="passions" aria-labelledby="passions-heading">
       <div class="section-container">
-        <div class="section-header">
-          <span class="header-badge badge-cyan">06 // PASSIONS & HOBBIES</span>
-          <h2 class="section-title">MY FAVORITE PASSIONS</h2>
-          <p class="section-desc">Interactive flip cards! Click or hover each card to see my favorite hobbies and leisure activities.</p>
-        </div>
+        <header class="section-header">
+          <span class="header-badge badge-cyan">06 // Passions &amp; Hobbies</span>
+          <h2 class="section-title" id="passions-heading">My Favourite Passions</h2>
+          <p class="section-desc">Click or tap each card to flip it and discover details about my favourite hobbies and interests.</p>
+        </header>
 
         <div class="flip-cards-grid">
-          <!-- Card 1: Long Highway Drives -->
-          <div class="flip-card">
+
+          <!-- Card 1: Highway Drives -->
+          <div class="flip-card" tabindex="0" role="button"
+               aria-label="Long Highway Drives — click to see details">
             <div class="flip-inner">
               <div class="flip-front brutal-card card-yellow">
-                <div class="flip-icon"><i class="fa-solid fa-car"></i></div>
+                <div class="flip-icon" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
                 <h3>Long Highway Drives</h3>
-                <span class="flip-hint">Click / Hover to flip ➔</span>
+                <span class="flip-hint" aria-hidden="true">Click / Tap to flip ➔</span>
               </div>
               <div class="flip-back brutal-card card-pink">
                 <h3>Scenic Road Trips</h3>
-                <p>Cruising on highway roads, music playlists, and exploring weekend getaways with friends.</p>
+                <p>Cruising on highway roads with music playlists and exploring weekend getaways with friends.</p>
                 <div class="back-tag">Fav: Road Trips</div>
               </div>
             </div>
           </div>
 
-          <!-- Card 2: Playing Drums -->
-          <div class="flip-card">
+          <!-- Card 2: Drums -->
+          <div class="flip-card" tabindex="0" role="button"
+               aria-label="Playing Drums — click to see details">
             <div class="flip-inner">
               <div class="flip-front brutal-card card-pink">
-                <div class="flip-icon"><i class="fa-solid fa-drum"></i></div>
+                <div class="flip-icon" aria-hidden="true"><i class="fa-solid fa-drum"></i></div>
                 <h3>Playing Drums</h3>
-                <span class="flip-hint">Click / Hover to flip ➔</span>
+                <span class="flip-hint" aria-hidden="true">Click / Tap to flip ➔</span>
               </div>
               <div class="flip-back brutal-card card-cyan">
-                <h3>Rhythm & Beat Control</h3>
+                <h3>Rhythm &amp; Beat Control</h3>
                 <p>Playing acoustic drums to express high energy, beat control, and dynamic musical focus.</p>
-                <div class="back-tag">Favorite Hobby 🥁</div>
+                <div class="back-tag">Favourite Hobby 🥁</div>
               </div>
             </div>
           </div>
 
-          <!-- Card 3: Dance & Stage -->
-          <div class="flip-card">
+          <!-- Card 3: Dance -->
+          <div class="flip-card" tabindex="0" role="button"
+               aria-label="Dance and Stage — click to see details">
             <div class="flip-inner">
               <div class="flip-front brutal-card card-cyan">
-                <div class="flip-icon"><i class="fa-solid fa-person-dancing"></i></div>
-                <h3>Dance & Stage</h3>
-                <span class="flip-hint">Click / Hover to flip ➔</span>
+                <div class="flip-icon" aria-hidden="true"><i class="fa-solid fa-person-dancing"></i></div>
+                <h3>Dance &amp; Stage</h3>
+                <span class="flip-hint" aria-hidden="true">Click / Tap to flip ➔</span>
               </div>
               <div class="flip-back brutal-card card-yellow">
                 <h3>Stage Performance</h3>
-                <p>Expressing rhythm and confidence through stage dancing, self-expression, and performance story.</p>
+                <p>Expressing rhythm and confidence through stage dancing, self-expression, and storytelling on stage.</p>
                 <div class="back-tag">Stage Performance 💃</div>
               </div>
             </div>
           </div>
 
           <!-- Card 4: Swimming -->
-          <div class="flip-card">
+          <div class="flip-card" tabindex="0" role="button"
+               aria-label="Swimming — click to see details">
             <div class="flip-inner">
               <div class="flip-front brutal-card card-green">
-                <div class="flip-icon"><i class="fa-solid fa-person-swimming"></i></div>
+                <div class="flip-icon" aria-hidden="true"><i class="fa-solid fa-person-swimming"></i></div>
                 <h3>Swimming</h3>
-                <span class="flip-hint">Click / Hover to flip ➔</span>
+                <span class="flip-hint" aria-hidden="true">Click / Tap to flip ➔</span>
               </div>
               <div class="flip-back brutal-card card-pink">
                 <h3>Pool Endurance</h3>
@@ -664,148 +763,209 @@
             </div>
           </div>
 
-          <!-- Card 5: Playing Guitar -->
-          <div class="flip-card">
+          <!-- Card 5: Guitar -->
+          <div class="flip-card" tabindex="0" role="button"
+               aria-label="Playing Guitar — click to see details">
             <div class="flip-inner">
               <div class="flip-front brutal-card card-yellow">
-                <div class="flip-icon"><i class="fa-solid fa-guitar"></i></div>
+                <div class="flip-icon" aria-hidden="true"><i class="fa-solid fa-guitar"></i></div>
                 <h3>Playing Guitar</h3>
-                <span class="flip-hint">Click / Hover to flip ➔</span>
+                <span class="flip-hint" aria-hidden="true">Click / Tap to flip ➔</span>
               </div>
               <div class="flip-back brutal-card card-cyan">
                 <h3>Acoustic Chords</h3>
-                <p>Unwinding with acoustic guitar chords, exploring tabs, and relaxing in quiet evenings.</p>
+                <p>Unwinding with acoustic guitar chords, exploring tabs, and relaxing with music in quiet evenings.</p>
                 <div class="back-tag">Part-Time Hobby 🎸</div>
               </div>
             </div>
           </div>
 
-          <!-- Card 6: Cooking & Food -->
-          <div class="flip-card">
+          <!-- Card 6: Cooking -->
+          <div class="flip-card" tabindex="0" role="button"
+               aria-label="Cooking and Food — click to see details">
             <div class="flip-inner">
               <div class="flip-front brutal-card card-pink">
-                <div class="flip-icon"><i class="fa-solid fa-utensils"></i></div>
-                <h3>Cooking & Food</h3>
-                <span class="flip-hint">Click / Hover to flip ➔</span>
+                <div class="flip-icon" aria-hidden="true"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Cooking &amp; Food</h3>
+                <span class="flip-hint" aria-hidden="true">Click / Tap to flip ➔</span>
               </div>
               <div class="flip-back brutal-card card-green">
                 <h3>Trying New Dishes</h3>
                 <p>Experimenting with making pasta, homemade snacks, and baking for family and friends.</p>
-                <div class="back-tag">Fav: Pasta & Snacks</div>
+                <div class="back-tag">Fav: Pasta &amp; Snacks</div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- CONTACT & CONNECT SECTION -->
-    <section class="section contact-section" id="contact">
+    <!-- ===========================
+         07 CONTACT
+         =========================== -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
       <div class="section-container">
         <div class="contact-box brutal-card card-yellow">
           <div class="contact-grid">
+
+            <!-- Info side -->
             <div class="contact-info">
-              <span class="header-badge badge-pink">07 // CONTACT</span>
-              <h2 class="contact-headline">GET IN TOUCH!</h2>
+              <span class="header-badge badge-pink">07 // Contact</span>
+              <h2 class="contact-headline" id="contact-heading">Get In Touch!</h2>
               <p class="contact-sub">
-                Feel free to reach out if you'd like to connect regarding sports, road trips, photography, student activities, or general conversations.
+                Feel free to reach out if you'd like to connect about sports, road trips, music, student activities, or a general conversation.
               </p>
 
-              <!-- Properly Organized Social Icon Bar -->
               <div class="contact-social-bar">
-                <a href="https://instagram.com" target="_blank" class="social-sticker sticker-pink" title="Instagram">
-                  <i class="fa-brands fa-instagram"></i>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                   class="social-sticker sticker-pink"
+                   aria-label="Follow on Instagram (opens in new tab)">
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                   <span>Instagram</span>
                 </a>
-                <a href="https://linkedin.com" target="_blank" class="social-sticker sticker-cyan" title="LinkedIn">
-                  <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                   class="social-sticker sticker-cyan"
+                   aria-label="Connect on LinkedIn (opens in new tab)">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                   <span>LinkedIn</span>
                 </a>
-                <a href="https://youtube.com" target="_blank" class="social-sticker sticker-red" title="YouTube">
-                  <i class="fa-brands fa-youtube"></i>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                   class="social-sticker sticker-red"
+                   aria-label="Watch on YouTube (opens in new tab)">
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                   <span>YouTube</span>
                 </a>
-                <a href="mailto:shreyas@example.com" class="social-sticker sticker-yellow" title="Email Direct">
-                  <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:shreyas@example.com"
+                   class="social-sticker sticker-orange"
+                   aria-label="Send email to Shreyas">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                   <span>Email</span>
                 </a>
               </div>
             </div>
 
+            <!-- Form side -->
             <div class="contact-form-wrap">
-              <form class="brutal-form" id="contactForm">
-                <div class="form-group">
-                  <label for="name">YOUR NAME *</label>
-                  <input type="text" id="name" required placeholder="e.g. Alex Rivera" class="brutal-input">
+              <form class="brutal-form" id="contactForm" novalidate aria-label="Contact form">
+
+                <div class="form-group" id="group-name">
+                  <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                  <input type="text"
+                         id="name"
+                         name="name"
+                         required
+                         autocomplete="name"
+                         placeholder="e.g. Alex Rivera"
+                         class="brutal-input"
+                         aria-required="true"
+                         aria-describedby="name-error" />
+                  <span class="form-error-msg" id="name-error" role="alert" aria-live="polite">Please enter your name.</span>
+                </div>
+
+                <div class="form-group" id="group-email">
+                  <label for="email">Your Email <span aria-hidden="true">*</span></label>
+                  <input type="email"
+                         id="email"
+                         name="email"
+                         required
+                         autocomplete="email"
+                         placeholder="alex@example.com"
+                         class="brutal-input"
+                         aria-required="true"
+                         aria-describedby="email-error" />
+                  <span class="form-error-msg" id="email-error" role="alert" aria-live="polite">Please enter a valid email address.</span>
                 </div>
 
                 <div class="form-group">
-                  <label for="email">YOUR EMAIL *</label>
-                  <input type="email" id="email" required placeholder="alex@example.com" class="brutal-input">
-                </div>
-
-                <div class="form-group">
-                  <label for="topic">TOPIC</label>
-                  <select id="topic" class="brutal-input">
-                    <option value="cricket">🏏 Sports & Cricket</option>
-                    <option value="driving">🚗 Road Trips & Driving</option>
-                    <option value="arts">📸 Photography & Hobbies</option>
-                    <option value="event">🌟 Volunteering & Student Activities</option>
+                  <label for="topic">Topic</label>
+                  <select id="topic" name="topic" class="brutal-input" autocomplete="off">
+                    <option value="sports">🏏 Sports &amp; Cricket</option>
+                    <option value="driving">🚗 Road Trips &amp; Driving</option>
+                    <option value="hobbies">🥁 Music &amp; Creative Hobbies</option>
+                    <option value="event">🌟 Volunteering &amp; Student Activities</option>
                     <option value="general">☕ General Connect</option>
                   </select>
                 </div>
 
-                <div class="form-group">
-                  <label for="message">YOUR MESSAGE *</label>
-                  <textarea id="message" rows="4" required placeholder="Write your message here..." class="brutal-input"></textarea>
+                <div class="form-group" id="group-message">
+                  <label for="message">Your Message <span aria-hidden="true">*</span></label>
+                  <textarea id="message"
+                            name="message"
+                            rows="4"
+                            required
+                            placeholder="Write your message here..."
+                            class="brutal-input"
+                            aria-required="true"
+                            aria-describedby="message-error"></textarea>
+                  <span class="form-error-msg" id="message-error" role="alert" aria-live="polite">Please enter a message.</span>
                 </div>
 
-                <button type="submit" class="btn btn-brutal btn-pink btn-block">
-                  <span>SEND MESSAGE ⚡</span>
-                  <i class="fa-solid fa-paper-plane"></i>
+                <button type="submit" id="submitBtn" class="btn btn-brutal btn-pink btn-block">
+                  <span id="submitBtnText">Send Message ⚡</span>
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
                 </button>
+
+                <!-- Success / failure feedback -->
+                <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+                  ✅ Message sent! Thank you — I'll get back to you soon.
+                </div>
+                <div class="form-failure" id="formFailure" role="alert" aria-live="assertive">
+                  ⚠️ Something went wrong. Please try again or email me directly.
+                </div>
+
               </form>
             </div>
+
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  </main><!-- /main-content -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
     <div class="footer-container">
       <div class="footer-brand">
-        <span class="logo-sticker">SHREYAS⚡</span>
-        <p>Non-Academic Portfolio showcasing sports, road trips, hobbies & volunteering. © 2026 Shreyas.</p>
+        <span class="logo-sticker" aria-hidden="true">SHREYAS⚡</span>
+        <p>Non-Academic Portfolio — showcasing sports, road trips, music, hobbies &amp; leadership. Shreyas Biware.</p>
       </div>
 
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="#hero">Back to Top ↑</a>
-        <a href="#sports">Sports & Cricket</a>
-        <a href="#gallery">Creative Hobbies</a>
+        <a href="#sports">Sports</a>
+        <a href="#gallery">Hobbies</a>
         <a href="#leadership">Activities</a>
         <a href="#trophies">Certificates</a>
-      </div>
+        <a href="#passions">Passions</a>
+      </nav>
+    </div>
+    <div class="footer-copy">
+      © <span id="footerYear">2026</span> Shreyas Biware. All rights reserved.
     </div>
   </footer>
 
-  <!-- LIGHTBOX MODAL -->
-  <div class="lightbox-modal" id="lightboxModal">
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
     <div class="lightbox-content brutal-card card-white">
-      <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
       <div class="lightbox-body">
         <div class="lightbox-img-holder">
-          <img id="lightboxImg" src="" alt="Expanded View">
+          <img id="lightboxImg" src="" alt="" />
         </div>
         <div class="lightbox-info">
-          <h3 id="lightboxTitle">Title</h3>
-          <p id="lightboxDesc">Description text goes here.</p>
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDesc"></p>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="./main.js"></script>
+  <!-- Main JavaScript -->
+  <script src="./main.js" defer></script>
+
 </body>
 </html>
